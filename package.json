@@ -2,8 +2,11 @@
   "name": "weather-cli",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,11 +19,13 @@
   "homepage": "https://google.com",
   "repository": {
     "type": "git",
-    "url": "https://google.com"
+    "url": "https://github.com/stasayetat/cli-weather"
   },
   "bugs": {
     "url": "https://google.com",
     "email": "stas.yarets234@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^1.3.4"
   }
-
 }
