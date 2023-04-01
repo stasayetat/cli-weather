@@ -18,9 +18,22 @@ function printHelp() {
         `));
 }
 
+function printWeather(data) {
+    console.log('\n');
+    console.log(dedent(`
+    ${chalk.bgYellow(`Weather`)}
+    ${data.weather[0].description}
+    Temperature ${data.main.temp} °C
+    Feels like ${data.main.feels_like} °C
+    Wind force ${data.wind.speed} m/s
+    City ${data.name}`));
+    console.log('\n');
+}
+
 export {
     printError,
     printSuccess,
-    printHelp
+    printHelp,
+    printWeather
 }
 
